@@ -1,11 +1,13 @@
-import { Button } from 'react-bootstrap';
+import Layout from './components/Layout';
+import TodoForm from './components/TodoForm';
 
 function App() {
   return (
-    <>
-      <h1>Приложение на React</h1>
-      <Button variant='primary'>Нажми меня</Button>
-    </>
+    <div className='App'>
+      <Layout>
+        <TodoForm />
+      </Layout>
+    </div>
   );
 }
 
